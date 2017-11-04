@@ -1,0 +1,31 @@
+    # AlertDialog
+    new-instance v0, Landroid/app/AlertDialog$Builder;
+    
+    invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    
+    # Title
+    const-string v1, "https://www.twitter.com/rhythmmods"
+    
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    
+    move-result-object v0
+    
+    # Message
+    const-string v1, "HACKS:\n1. NO LOSS HP\n\nHacked By Indigo"
+    
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    
+    move-result-object v0
+    
+    # Button
+    const-string v1, "OK"
+    
+    const/4 p0, 0x0
+    
+    invoke-virtual {v0, v1, p0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    
+    move-result-object v0
+    
+    invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
+    
+    return-void
